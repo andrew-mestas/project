@@ -7,7 +7,7 @@ Using the awe.js library
 + z-index = 1 foot distance 
 + scene rendered out as 3d space can be manipulated based on position
 
-Brian was mentioning using MongoDB to integrate location-based queries and its scalability also for this project do you guys want to use node with Express or Ruby with rails? What are the pros and cons?
+Brian was mentioning using MongoDB to integrate location-based queries and its scalability also for this project
 
 ​[2:53] 
 Using the open API can bind data to objects rendered on 3d scene
