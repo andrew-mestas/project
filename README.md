@@ -14,3 +14,7 @@ Using the open API can bind data to objects rendered on 3d scene
 
 ​[2:54] 
 Possibly using coordinates to re render objects on seen space for example when user starts log starting coordinates monitor for changes in coordinates subtract from original find out the difference from that difference gives us a number to either scale or transform each object in the space
+
+navigator.geolocation.watchPosition(showPosition);
+
+https://github.com/altermarkive/Learning-Sensor-Access-in-JS
