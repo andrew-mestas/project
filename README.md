@@ -36,11 +36,12 @@ items - id I, location(coord)? container(I) : randomItem, data [...]
 HTML 5 position data to test
 
 Primary functionality to be created 
-+ walk into cell send appropriate json data
-+ check surrounding cells for objects or ifempty then render (like games / cache)
-+ possible surrounding cells 9x9 or more depending on the former statement
-+ render with awe.js (mobile (first), oculus?(future), glass?(future))
-+ scavenger
-+ auth
-+ upgrades $
-+ expand 
+----
+* walk into cell send appropriate json data
+* check surrounding cells for objects or ifempty then render (like games / cache)
+* possible surrounding cells 9x9 or more depending on the former statement
+* render with awe.js (mobile (first), oculus?(future), glass?(future))
+* scavenger
+* auth
+* upgrades $
+* expand 
