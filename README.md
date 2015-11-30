@@ -19,8 +19,8 @@ navigator.geolocation.watchPosition(showPosition);
 
 https://github.com/altermarkive/Learning-Sensor-Access-in-JS
 
-----
 Nov 30
+----
 Decided to implement node, express, mongodb
 Discussed functionality of the project
 Until further notice the flow will be as follows:
