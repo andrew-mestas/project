@@ -49,20 +49,20 @@ Until further notice the flow will be as follows:
 | location | coord  |
 | currentUsers | I , coord  |
 
-| Container  | Type |
-| ---- | ---- | 
-|  id | I |
-| location | coord  |
-| items | [...] |
-| userBelongsTo | I | 
+| Container  | Type | | Item  | Type |
+| ---- | ---- |  | ---- | ---- | 
+|  id | I | |  id | I |
+| location | coord  | | Location | coord |
+| items | [...] | | email | S |
+| userBelongsTo | I |  | container | I | 
+                      | data | [...] |
+  
 
-| Item  | Type |
-| ---- | ---- | 
-|  id | I |
-| Location | coord |
-| email | S |
-| container | I | 
-| data | [...] |
+
+
+
+
+
 
 
 *HTML 5 position data to test*
