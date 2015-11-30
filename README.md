@@ -28,14 +28,15 @@ Until further notice the flow will be as follows:
 
    * User >-< cell >-< containers >-< items
 
-user - id I, name S, email S, password S, container I, ...
-cell - id I, location (center coord), currentUsers?(I)(?coord)
-container - id I, location (coord), items [...], userBelongsTo?(I) - note: containers w/o user are public
-items - id I, location(coord)? container(I) : randomItem, data [...]
+####Models somewhat
+* user - id I, name S, email S, password S, container I, ...
+* cell - id I, location (center coord), currentUsers?(I)(?coord)
+* container - id I, location (coord), items [...], userBelongsTo?(I) - note: containers w/o user are public
+* items - id I, location(coord)? container(I) : randomItem, data [...]
 
-HTML 5 position data to test
+*HTML 5 position data to test*
 
-Primary functionality to be created 
+####Primary functionality to be created 
 ----
 * walk into cell send appropriate json data
 * check surrounding cells for objects or ifempty then render (like games / cache)
