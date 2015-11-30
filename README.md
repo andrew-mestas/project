@@ -25,8 +25,7 @@ Decided to implement node, express, mongodb
 Discussed functionality of the project
 Until further notice the flow will be as follows:
 A user can have many conainers that contain many items that have many data elements which are contained within many cells which can have many users
-
-##User >-< cell >-< containers >-< items
+User >-< cell >-< containers >-< items
 
 user - id I, name S, email S, password S, container I, ...
 cell - id I, location (center coord), currentUsers?(I)(?coord)
