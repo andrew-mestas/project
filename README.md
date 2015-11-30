@@ -38,11 +38,11 @@ Until further notice the flow will be as follows:
 
 ####Primary functionality to be created 
 ----
-* walk into cell send appropriate json data
-* check surrounding cells for objects or ifempty then render (like games / cache)
-* possible surrounding cells 9x9 or more depending on the former statement
-* render with awe.js (mobile (first), oculus?(future), glass?(future))
-* scavenger
-* auth
-* upgrades $
-* expand 
+1 walk into cell send appropriate json data
+2 check surrounding cells for objects or ifempty then render (like games / cache)
+3 possible surrounding cells 9x9 or more depending on the former statement
+4 render with awe.js (mobile (first), oculus?(future), glass?(future))
+5 scavenger
+6 auth
+7 upgrades $
+8 expand 
