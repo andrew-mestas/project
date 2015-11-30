@@ -43,6 +43,33 @@ user
   password  : PASSWORDHASH,
   container : containerId
 }
+
+cell
+{
+  id           : 1,
+  location     : {lat: 0, lon: 0},
+  currentUsers : [
+                   {1: 
+                      {lat: 0, lon: 0} }
+                 ]
+}
+
+container
+{
+  id:           : 1,
+  location      : {lat: 0, lon: 0},
+  items         : [0,1,2,3],
+  userBelongsTo : 1
+}
+
+item
+{
+  id            : 1,
+  location      : {lat: 0, lon: 0},
+  container     : 1,
+  data          : [{...},{...}]
+}
+
 ```
 
 *HTML 5 position data to test*
