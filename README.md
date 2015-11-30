@@ -29,6 +29,11 @@ Until further notice the flow will be as follows:
    * User >-< cell >-< containers >-< items
 
 ####Models somewhat
+* user - id I, name S, email S, password S, container I, ...
+* cell - id I, location (center coord), currentUsers?(I)(?coord)
+* container - id I, location (coord), items [...], userBelongsTo?(I) - note: containers w/o user are public
+* item - id I, location(coord)? container(I) : randomItem, data [...]
+
 | User  | Type |
 | ---- | ---- | 
 |  id | I |
@@ -38,10 +43,27 @@ Until further notice the flow will be as follows:
 | container | I |
 | ... | ... |
 
-* user - id I, name S, email S, password S, container I, ...
-* cell - id I, location (center coord), currentUsers?(I)(?coord)
-* container - id I, location (coord), items [...], userBelongsTo?(I) - note: containers w/o user are public
-* items - id I, location(coord)? container(I) : randomItem, data [...]
+| Cell  | Type |
+| ---- | ---- | 
+|  id | I |
+| location | coord  |
+| currentUsers | I , coord  |
+
+| Container  | Type |
+| ---- | ---- | 
+|  id | I |
+| location | coord  |
+| items | [...] |
+| userBelongsTo | I | 
+
+| Item  | Type |
+| ---- | ---- | 
+|  id | I |
+| Location | coord |
+| email | S |
+| container | I | 
+| data | [...] |
+
 
 *HTML 5 position data to test*
 #*TOKENS!*
