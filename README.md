@@ -34,6 +34,14 @@ Until further notice the flow will be as follows:
 * container - id I, location (coord), items [...], userBelongsTo?(I) - note: containers w/o user are public
 * item - id I, location(coord)? container(I) : randomItem, data [...]
 
+user 
+{
+  id        : 1,
+  name      : FirstNameLastName,
+  email     : email@email.com,
+  password  : PASSWORDHASH,
+  container : containerId
+}
 
 
 *HTML 5 position data to test*
