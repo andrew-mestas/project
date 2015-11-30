@@ -46,3 +46,8 @@ Until further notice the flow will be as follows:
 6. auth
 7. upgrades $
 8. expand 
+
+| Name | Description          |
+| ------------- | ----------- |
+| Help      | ~~Display the~~ help window.|
+| Close     | _Closes_ a window     |
