@@ -30,7 +30,7 @@ Until further notice the flow will be as follows:
 
 ####Models somewhat
 | User  | Type |
-| ------------- | 
+| ---- | ---- | 
 |  id | I |
 | name | S  |
 | email | S |
