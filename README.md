@@ -35,6 +35,12 @@ Until further notice the flow will be as follows:
 * item - id I, location(coord)? container(I) : randomItem, data [...]
 
 ```javascript
+location
+{
+  lat       : 0,
+  lon       : 0
+}
+
 user 
 {
   id        : 1,
@@ -47,26 +53,23 @@ user
 cell
 {
   id           : 1,
-  location     : {lat: 0, lon: 0},
-  currentUsers : [
-                   {1: 
-                      {lat: 0, lon: 0} }
-                 ]
+  location     : locationId,
+  currentUsers : [ {1: locationId }, {2: locationId }, ... ](optional)
 }
 
 container
 {
   id:           : 1,
-  location      : {lat: 0, lon: 0},
-  items         : [0,1,2,3],
-  userBelongsTo : 1
+  location      : locationId,
+  items         : [itemId,itemId,...],
+  userBelongsTo : userId(optional)
 }
 
 item
 {
   id            : 1,
-  location      : {lat: 0, lon: 0},
-  container     : 1,
+  location      : locationId(optional if !hascontainer),
+  container     : containerId(optional),
   data          : [{...},{...}]
 }
 
