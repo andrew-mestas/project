@@ -33,7 +33,7 @@ Until further notice the flow will be as follows:
 * cell - id I, location (center coord), currentUsers?(I)(?coord)
 * container - id I, location (coord), items [...], userBelongsTo?(I) - note: containers w/o user are public
 * item - id I, location(coord)? container(I) : randomItem, data [...]
-
+''''
 user 
 {
   id        : 1,
@@ -42,7 +42,7 @@ user
   password  : PASSWORDHASH,
   container : containerId
 }
-
+''''
 
 *HTML 5 position data to test*
 #*TOKENS!*
