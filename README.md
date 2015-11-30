@@ -29,14 +29,14 @@ Until further notice the flow will be as follows:
    * User >-< cell >-< containers >-< items
 
 ####Models somewhat
-| User  | 
+| User  | Type |
 | ------------- | 
-|  id I |
-| name S |
-| email S |
-| password S |
-| container I |
-| ...|
+|  id | I |
+| name | S  |
+| email | S |
+| password | S | 
+| container | I |
+| ... | ... |
 
 * user - id I, name S, email S, password S, container I, ...
 * cell - id I, location (center coord), currentUsers?(I)(?coord)
