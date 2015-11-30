@@ -34,35 +34,6 @@ Until further notice the flow will be as follows:
 * container - id I, location (coord), items [...], userBelongsTo?(I) - note: containers w/o user are public
 * item - id I, location(coord)? container(I) : randomItem, data [...]
 
-| User  | Type |
-| ---- | ---- | 
-|  id | I |
-| name | S  |
-| email | S |
-| password | S | 
-| container | I |
-| ... | ... |
-
-| Cell  | Type |
-| ---- | ---- | 
-|  id | I |
-| location | coord  |
-| currentUsers | I , coord  |
-
-| Container  | Type | | Item  | Type |
-| ---- | ---- |  | ---- | ---- | 
-|  id | I | |  id | I |
-| location | coord  | | Location | coord |
-| items | [...] | | email | S |
-| userBelongsTo | I |  | container | I | 
-                      | data | [...] |
-  
-
-
-
-
-
-
 
 
 *HTML 5 position data to test*
