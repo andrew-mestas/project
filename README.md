@@ -37,6 +37,7 @@ Until further notice the flow will be as follows:
 ```javascript
 location
 {
+  id        : 1,
   lat       : 0,
   lon       : 0
 }
