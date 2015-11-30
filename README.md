@@ -24,7 +24,8 @@ Nov 30
 Decided to implement node, express, mongodb
 Discussed functionality of the project
 Until further notice the flow will be as follows:
-* A user can have many conainers that contain many items that have many data elements which are contained within many cells which can have many users
+* A user can have a conainer that contains many items that have many data elements which are contained within many cells which can have many users and have many containers with many items or many items without containers
+  * *and we just keep on keeping on...*
 
    * User >-< cell >-< containers >-< items
 
