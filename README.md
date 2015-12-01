@@ -43,7 +43,8 @@ user
   name      : FirstNameLastName,
   email     : email@email.com,
   password  : PASSWORDHASH,
-  container : containerId
+  items     : [{...},{...},...],
+  visited   : [conatainerId, ...]
 }
 
 cell
