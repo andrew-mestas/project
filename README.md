@@ -64,7 +64,6 @@ container
 item
 {
   id            : 1,
-  location      : {lat: 0, lon: 0}(optional if !hascontainer),
   container     : containerId(optional),
   data          : [{...},{...}]
 }
