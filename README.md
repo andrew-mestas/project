@@ -44,7 +44,7 @@ user
   email     : email@email.com,
   password  : PASSWORDHASH,
   items     : [{...},{...},...],
-  visited   : [conatainerId, ...]
+  visited   : [{conatainerId: 0, datevisited: 0}, {...}]
 }
 
 cell
