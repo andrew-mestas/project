@@ -65,12 +65,12 @@ container
 
 //                not needed                       //  (edit Dec 3, 2015)
 /////////////////////////////////////////////////////
-item
-{
-  id            : 1,
-  container     : containerId(optional),
-  data          : [{...},{...}]
-}
+//item
+//{
+//  id            : 1,
+//  container     : containerId(optional),
+//  data          : [{...},{...}]
+//}
 /////////////////////////////////////////////////////
 ```
 
