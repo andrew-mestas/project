@@ -44,6 +44,7 @@ user
   email     : email@email.com,
   password  : PASSWORDHASH,
   visited   : [{conatainerId: 0, datevisited: 0}, {...}]
+  cellId    : 1
   // items     : [{...},{...},...], (Dec 2) unnecessary as items can refer to their user
   // https://docs.mongodb.org/manual/tutorial/model-referenced-one-to-many-relationships-between-documents/
  
@@ -53,7 +54,7 @@ cell
 {
   id           : 1
   location     : {lat: 0, lon: 0},
-  currentUsers : [ {1: locationId }, {2: locationId }, ... ](optional)
+ // currentUsers : [ {1: locationId }, {2: locationId }, ... ](optional)
 }
 
 container
