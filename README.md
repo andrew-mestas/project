@@ -58,21 +58,31 @@ container
 {
   id:           : 1,
   location      : {lat: 0, lon: 0},
-  items         : [itemId,itemId,...],
-  userBelongsTo : userId(optional)
+  items         : [containerId,...], (edit Dec 3,2015)
+  userBelongsTo : userId(optional),
+  data          : [{...},{...}]      (edit Dec 3,2015)
 }
 
+//                not needed                       //  (edit Dec 3, 2015)
+/////////////////////////////////////////////////////
 item
 {
   id            : 1,
   container     : containerId(optional),
   data          : [{...},{...}]
 }
-
+/////////////////////////////////////////////////////
 ```
 
 *HTML 5 position data to test*
 #*TOKENS!*
+
+Dec 3
+----
++ Spoke about using container to function for item since item is redundant
++ Possible expansions 
++ (meteor?)
++ rendering based on location or false location for other area in world space
 
 ####Primary functionality to be created 
 ----
