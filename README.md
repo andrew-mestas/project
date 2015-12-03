@@ -43,8 +43,10 @@ user
   name      : FirstNameLastName,
   email     : email@email.com,
   password  : PASSWORDHASH,
-  items     : [{...},{...},...],
   visited   : [{conatainerId: 0, datevisited: 0}, {...}]
+  // items     : [{...},{...},...], (Dec 2) unnecessary as items can refer to their user
+  // https://docs.mongodb.org/manual/tutorial/model-referenced-one-to-many-relationships-between-documents/
+ 
 }
 
 cell
