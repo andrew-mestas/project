@@ -1,4 +1,4 @@
-  window.addEventListener('load', function() {
+   window.addEventListener('load', function() {
     // initialize awe after page loads
     window.awe.init({
       // automatically detect the device type
@@ -61,19 +61,8 @@
                 });
                 },4000);
               }, false);
-
-			        // add some points of interest (poi) for each of the compass points
-			        awe.pois.add({ id:'north', position: { x:0, y:0, z:4 } });
-			        awe.pois.add({ id:'north_east', position: { x:100, y:0, z:200 } });
-			        awe.pois.add({ id:'east', position: { x:200, y:0, z:0 } });
-			        awe.pois.add({ id:'south_east', position: { x:200, y:0, z:-200 } });
-			        awe.pois.add({ id:'south', position: { x:0, y:0, z:-200 } });
-			        awe.pois.add({ id:'south_west', position: { x:-200, y:0, z:-200 } });
-			        awe.pois.add({ id:'west', position: { x:-200, y:0, z:0 } });
-			        awe.pois.add({ id:'north_west', position: { x:-200, y:0, z:200 } });
-			
-			        // add projections to each of the pois
-			        awe.projections.add({ 
+              		var poisData = { id:'north', position: { x:0, y:0, z:4 } };
+              		var projectionData = [{ 
 			          id:'n', 
 			          geometry:{ shape:'cube', x:1, y:1, z:1 }, 
                 rotation:{ x:30, y:30, z:0 },
@@ -81,7 +70,19 @@
 			            type: 'phong',
 			            color:0xFF0000, 
 			          },
-			        }, { poi_id: 'north' });
+			        }, { poi_id: 'north' }];
+			        // add some points of interest (poi) for each of the compass points
+			        awe.pois.add(poisData);
+			        // awe.pois.add({ id:'north_east', position: { x:100, y:0, z:200 } });
+			        // awe.pois.add({ id:'east', position: { x:200, y:0, z:0 } });
+			        // awe.pois.add({ id:'south_east', position: { x:200, y:0, z:-200 } });
+			        // awe.pois.add({ id:'south', position: { x:0, y:0, z:-200 } });
+			        // awe.pois.add({ id:'south_west', position: { x:-200, y:0, z:-200 } });
+			        // awe.pois.add({ id:'west', position: { x:-200, y:0, z:0 } });
+			        // awe.pois.add({ id:'north_west', position: { x:-200, y:0, z:200 } });
+			
+			        // add projections to each of the pois
+			        awe.projections.add(projectionData[0], projectionData[1]);
 
 			        awe.projections.add({ 
 			          id:'ne', 

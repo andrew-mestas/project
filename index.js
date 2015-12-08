@@ -24,43 +24,43 @@ app.use(express.static(__dirname + "/static"));
 app.use(ejsLayout);
 app.set("view engine", "ejs");
 
-// var newCell = Cell({
-// 	location: [47.6232447, -122.3304342]
-// });
+var newCell = Cell({
+	location: [47.6232447, -122.3304342]
+});
 
-// var newContainer = Container({
-// 	position: { x:0, y:0, z:4 },
-// 	items: null, 
-// 	belongsTo: null,
-// 	data: [{
-// 			id:'n',
-// 			geometry:{ shape:'cube', x:1, y:1, z:1 }, 
-//             rotation:{ x:30, y:30, z:0 },
-//             material:{ 
-// 			          type: 'phong',
-// 			          color:0xFF0000, 
-// 			         },
-// 	        }, { poi_id: 'north' }],
-// 	cellContained: newCell._id
-// });
+var newContainer = Container({
+	position: { x:0, y:0, z:4 },
+	items: null, 
+	belongsTo: null,
+	data: [{
+			id: 'n',
+			geometry:{ shape:'cube', x:1, y:1, z:1 }, 
+            rotation:{ x:30, y:30, z:0 },
+            material:{ 
+			          type: 'phong',
+			          color:0xFF0000, 
+			         },
+	        }, { poi_id: 'north' }, {poisData: {id:'north', position: { x:0, y:0, z:4 }}}],
+	cellContained: newCell._id
+});
 
-// var newUser = User({
-// 	name: 'Bobby Dylan',
-// 	email: 'testing@test.com',
-// 	password: 'password',
-// 	holding: [{containerId: null, dateVisited: new Date()}],
-// 	cellId: null
-// });
+var newUser = User({
+	name: 'Bobby Dylan',
+	email: 'testing@test.com',
+	password: 'password',
+	holding: [{containerId: null, dateVisited: new Date()}],
+	cellId: null
+});
 
 
 
-// app.use('/api/users', require('./controllers/users'));
-// app.use('/api/cells', require('./controllers/cells'));
-// app.use('/api/containers', require('./controllers/containers'));
+app.use('/api/users', require('./controllers/users'));
+app.use('/api/cells', require('./controllers/cells'));
+app.use('/api/containers', require('./controllers/containers'));
 
 
 app.get('/', function(req, res){
-	res.render("index");
+	res.render("index", {newCell, newContainer, newUser});
 });
 
 app.listen(3000,"0.0.0.0");

@@ -213,7 +213,7 @@ document.querySelector('head').appendChild(file);}
 catch(e){};}
 var _get_user_media=undefined,_connect_stream_to_src=function(){};if(navigator.getUserMedia){_get_user_media=navigator.getUserMedia.bind(navigator);_connect_stream_to_src=function(media_stream,media_element){media_element.srcObject=media_stream;media_element.play();};}
 else if(navigator.mozGetUserMedia){_get_user_media=navigator.mozGetUserMedia.bind(navigator);_connect_stream_to_src=function(media_stream,media_element){media_element.mozSrcObject=media_stream;media_element.play();};}
-else if(navigator.webkitGetUserMedia){_get_user_media=navigator.webkitGetUserMedia.bind(navigator);_connect_stream_to_src=function(media_stream,media_element){media_element.src=webkitURL.createObjectURL(media_stream);media_element.play();};}
+else if(navigator.webkitGetUserMedia){_get_user_media=navigator.webkitGetUserMedia.bind(navigator);_connect_stream_to_src=function(media_stream,media_element){media_element.src=URL.createObjectURL(media_stream);media_element.play();};}
 function _clean_object(object,list_of_keys){var keys={};for(var key in list_of_keys){keys[list_of_keys[key]]=1;}
 for(var key in object){if(!keys[key]){delete object[key];}}
 return object;}
