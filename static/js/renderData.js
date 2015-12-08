@@ -64,90 +64,90 @@
 
 			        // add some points of interest (poi) for each of the compass points
 			        awe.pois.add({ id:'north', position: { x:0, y:0, z:4 } });
-			        // awe.pois.add({ id:'north_east', position: { x:100, y:0, z:200 } });
-			        // awe.pois.add({ id:'east', position: { x:200, y:0, z:0 } });
-			        // awe.pois.add({ id:'south_east', position: { x:200, y:0, z:-200 } });
-			        // awe.pois.add({ id:'south', position: { x:0, y:0, z:-200 } });
-			        // awe.pois.add({ id:'south_west', position: { x:-200, y:0, z:-200 } });
-			        // awe.pois.add({ id:'west', position: { x:-200, y:0, z:0 } });
-			        // awe.pois.add({ id:'north_west', position: { x:-200, y:0, z:200 } });
+			        awe.pois.add({ id:'north_east', position: { x:100, y:0, z:200 } });
+			        awe.pois.add({ id:'east', position: { x:200, y:0, z:0 } });
+			        awe.pois.add({ id:'south_east', position: { x:200, y:0, z:-200 } });
+			        awe.pois.add({ id:'south', position: { x:0, y:0, z:-200 } });
+			        awe.pois.add({ id:'south_west', position: { x:-200, y:0, z:-200 } });
+			        awe.pois.add({ id:'west', position: { x:-200, y:0, z:0 } });
+			        awe.pois.add({ id:'north_west', position: { x:-200, y:0, z:200 } });
 			
 			        // add projections to each of the pois
 			        awe.projections.add({ 
 			          id:'n', 
 			          geometry:{ shape:'cube', x:1, y:1, z:1 }, 
-                	rotation:{ x:30, y:30, z:0 },
+                rotation:{ x:30, y:30, z:0 },
 			          material:{ 
 			            type: 'phong',
 			            color:0xFF0000, 
 			          },
 			        }, { poi_id: 'north' });
 
-			        // awe.projections.add({ 
-			        //   id:'ne', 
-			        //   geometry:{ shape:'sphere', radius:10 }, 
-			        //   material:{ 
-			        //     type: 'phong',
-			        //     color:0xCCCCCC, 
-			        //   },
-			        // }, { poi_id: 'north_east' });
+			        awe.projections.add({ 
+			          id:'ne', 
+			          geometry:{ shape:'sphere', radius:10 }, 
+			          material:{ 
+			            type: 'phong',
+			            color:0xCCCCCC, 
+			          },
+			        }, { poi_id: 'north_east' });
 
-			        // awe.projections.add({ 
-			        //   id:'e', 
-			        //   geometry:{ shape:'cube', x:50, y:50, z:50 }, 
-           //      rotation:{ x:30, y:30, z:0 },
-			        //   material:{ 
-			        //     type: 'phong',
-			        //     color:0x00FF00, 
-			        //   },
-			        // }, { poi_id: 'east' });
+			        awe.projections.add({ 
+			          id:'e', 
+			          geometry:{ shape:'cube', x:50, y:50, z:50 }, 
+                rotation:{ x:30, y:30, z:0 },
+			          material:{ 
+			            type: 'phong',
+			            color:0x00FF00, 
+			          },
+			        }, { poi_id: 'east' });
 
-			        // awe.projections.add({ 
-			        //   id:'se', 
-			        //   geometry:{ shape:'sphere', radius:10 }, 
-			        //   material:{ 
-			        //     type: 'phong',
-			        //     color:0xCCCCCC, 
-			        //   },
-			        // }, { poi_id: 'south_east' });
+			        awe.projections.add({ 
+			          id:'se', 
+			          geometry:{ shape:'sphere', radius:10 }, 
+			          material:{ 
+			            type: 'phong',
+			            color:0xCCCCCC, 
+			          },
+			        }, { poi_id: 'south_east' });
 
-			        // awe.projections.add({ 
-			        //   id:'s', 
-			        //   geometry:{ shape:'cube', x:50, y:50, z:50 }, 
-           //      rotation:{ x:30, y:30, z:0 },
-			        //   material:{ 
-			        //     type: 'phong',
-			        //     color:0xFFFFFF, 
-			        //   },
-			        // }, { poi_id: 'south' });
+			        awe.projections.add({ 
+			          id:'s', 
+			          geometry:{ shape:'cube', x:50, y:50, z:50 }, 
+                rotation:{ x:30, y:30, z:0 },
+			          material:{ 
+			            type: 'phong',
+			            color:0xFFFFFF, 
+			          },
+			        }, { poi_id: 'south' });
 
-			        // awe.projections.add({ 
-			        //   id:'sw', 
-			        //   geometry:{ shape:'sphere', radius:10 }, 
-			        //   material:{ 
-			        //     type: 'phong',
-			        //     color:0xCCCCCC, 
-			        //   },
-			        // }, { poi_id: 'south_west' });
+			        awe.projections.add({ 
+			          id:'sw', 
+			          geometry:{ shape:'sphere', radius:10 }, 
+			          material:{ 
+			            type: 'phong',
+			            color:0xCCCCCC, 
+			          },
+			        }, { poi_id: 'south_west' });
 
-			        // awe.projections.add({ 
-			        //   id:'w', 
-			        //   geometry:{ shape:'cube', x:50, y:50, z:50 }, 
-           //      rotation:{ x:30, y:30, z:0 },
-			        //   material:{ 
-			        //     type: 'phong',
-			        //     color:0x0000FF, 
-			        //   },
-			        // }, { poi_id: 'west' });
+			        awe.projections.add({ 
+			          id:'w', 
+			          geometry:{ shape:'cube', x:50, y:50, z:50 }, 
+                rotation:{ x:30, y:30, z:0 },
+			          material:{ 
+			            type: 'phong',
+			            color:0x0000FF, 
+			          },
+			        }, { poi_id: 'west' });
 
-			        // awe.projections.add({ 
-			        //   id:'nw', 
-			        //   geometry:{ shape:'sphere', radius:10 }, 
-			        //   material:{ 
-			        //     type: 'phong',
-			        //     color:0xCCCCCC, 
-			        //   },
-			        // }, { poi_id: 'north_west' });
+			        awe.projections.add({ 
+			          id:'nw', 
+			          geometry:{ shape:'sphere', radius:10 }, 
+			          material:{ 
+			            type: 'phong',
+			            color:0xCCCCCC, 
+			          },
+			        }, { poi_id: 'north_west' });
 			
             },
           },

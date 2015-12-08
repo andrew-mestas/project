@@ -977,7 +977,6 @@ function awe_v8() {
         else {
           this.debug_verbose = 1;
         }
-
         if (io.device_type !== undefined) {
           if (io.device_type === true) {
             var device_type = 'unsupported';
